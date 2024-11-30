@@ -1,0 +1,363 @@
+/* Ensure body allows scrolling */
+body {
+    margin: 0;
+    font-family: 'Play Fair Display';
+    color: #fff;
+    background: url('jellyfishyes.gif') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: auto; /* Allow body to extend based on content */
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+    padding-top: 100px;
+    padding-bottom: 60px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+/* Main content should also allow scrolling */
+main {
+    padding: 20px;
+    min-height: 100vh; /* Ensure the main section can take the full height */
+    box-sizing: border-box; /* Ensures padding doesn't affect total height */
+}
+
+/* Prevent body and main content from being too tight */
+main .hero {
+    margin-top: 0; /* Remove excessive margin */
+    padding-top: 0; /* Adjust if necessary */
+}
+
+/* Adjust the video container for scrolling */
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: auto; /* Allow flexibility in video height */
+}
+
+/* Make the video fully responsive */
+.video-container video {
+    width: 100%; /* Ensure the video fits the container */
+    height: 100%; /* Make video height flexible */
+    object-fit: contain; /* Make sure the video fits well inside */
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+header .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8f9dc4; /* Highlight color */
+}
+
+/* Hero Section */
+.hero {
+background: url('wave\ BG\ 1.png') no-repeat center center/cover; /* Replace with your background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-bottom: 50px; /* Adds space below hero section */
+}
+
+/* Add Glow to Text */
+.hero .center-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #fdfeff, 0 0 20px #228bee, 0 0 30px #5fb2ff;
+}
+
+.hero .center-text p {
+ height: 100vh;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #94a8be, 0 0 10px #486ca1;
+}
+
+/* Hero Section */
+.hero {
+    background: url('wave BG 1.png') no-repeat center center; /* Jellyfish background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px;
+    margin-bottom: 50px; /* Adds space below hero section */
+    background-size: 100% 100%; /* Make sure background takes 100% width and height */
+    background-attachment: fixed; /* Keeps the background fixed */
+    background-position: center;
+}
+
+/* Background Animation */
+@keyframes changeBackground {
+    0% {
+        background-image: url('jellyfishyes.gif'); /* First image */
+        background-size: 100% 100%; /* Ensures the GIF covers the full area */
+        background-attachment: fixed; /* Keeps the background fixed */
+    }
+    50% {
+        background-image: url('koifishyes.gif'); /* Second image */
+        background-size: 100% 100%; /* Ensures the GIF covers the full area */
+        background-attachment: fixed; /* Keeps the background fixed */
+    }
+    100% {
+        background-image: url('jellyfishyes.gif'); /* Back to first image */
+        background-size: 100% 100%; /* Ensures the GIF covers the full area */
+        background-attachment: fixed; /* Keeps the background fixed */
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center Buttons in the Hero Section */
+.cta-buttons {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    align-items: center; /* Centers buttons vertically if needed */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px; /* Adjust space above the buttons */
+}
+
+.cta-buttons .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #282c34;
+    background-color: #95b9db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cta-buttons .button:hover {
+    background-color: #515c97;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.8); /* Black semi-transparent background */
+    color: white; /* White text for the table */
+    border: 2px solid #95b9db; /* Border around the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-radius: 15px; /* Rounded corners for the table */
+    overflow: hidden; /* Ensures rounded corners are applied properly */
+}
+
+th, td {
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white border for table cells */
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: rgba(33, 33, 33, 0.9); /* Darker background for the header */
+    color: white; /* White text for header */
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Profile Header Styling */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px; /* Space between the header and the table */
+    padding: 0 20px; /* Optional padding for smaller screens */
+}
+
+/* Text Section Styling */
+.text-section {
+    flex: 1; /* Occupies space on the left */
+    text-align: left; /* Left-align the text */
+}
+
+.welcome-title {
+    font-size: 5rem; /* Increased font size for the main title */
+    font-weight: bold;
+    color: white; /* Matches theme */
+    margin-bottom: 10px; /* Space below the title */
+    line-height: 1.2; /* Adjust line spacing */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+}
+
+.welcome-title .hi {
+    font-size: 7rem; /* Larger font size for "Hi!" */
+    color: #ffcc00; /* Optional highlight color */
+    text-shadow: 0 4px 8px rgba(255, 204, 0, 0.5); /* Glow effect */
+}
+
+.welcome-title .arrow {
+    font-size: 4rem; /* Larger arrow size */
+    color: #95b9db; /* Matches the theme */
+    font-weight: bold;
+}
+
+.welcome-subtitle {
+    font-size: 1.5rem; /* Increased subtitle font size */
+    color: #dcdcdc; /* Lighter text color */
+    margin-top: 5px; /* Space between title and subtitle */
+}
+
+/* Image Section Styling */
+.image-section {
+    flex: 0; /* Keep the image fixed to its size */
+    margin-left: 30px; /* Space between text and image */
+}
+
+.profile-image {
+    width: 250px; /* Increased image size */
+    height: 250px; /* Increased image size */
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid white; /* Optional border for emphasis */
+    object-fit: cover; /* Ensures the image fits nicely within the circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+main {
+    padding: 20px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+/* General styling for experience containers */
+.experience-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+    justify-content: flex-start; /* Aligns items to the left */
+    margin-bottom: 40px; /* Space between experiences */
+    width: 100%; /* Ensure containers span the full width */
+}
+
+/* Align the image or video to the left */
+.image-container, .video-container {
+    flex: 1; /* Take equal space in the container */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative; /* Allows positioning of text over the image */
+}
+
+.image-container img, .video-container video {
+    width: 100%; /* Ensures the image/video spans the container width */
+    height: 300px; /* Fixed height for rectangular shape */
+    object-fit: cover; /* Ensures the content maintains its aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Text container */
+.text-container {
+    flex: 2; /* Takes more space on the right */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    color: white; /* White text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+    text-align: center; /* Ensure text is centered */
+}
+
+/* Reverse experience container for alternating layout */
+.experience-container.reverse {
+    flex-direction: row-reverse; /* Reverse the order of image and text */
+}
+
+/* Ensure text is aligned to the center */
+.text-container h2, .text-container p {
+    text-align: center; /* Align text to the center */
+}
+
+/* Main Title (Experiences) */
+.main-title {
+    text-align: center;
+    font-size: 4rem; /* Increased font size */
+    color: white;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px #ffffff, 0 0 20px #ffffff; /* Glowing white effect */
+}
+
+.experience-title {
+    font-size: 2.5rem;
+    color: #ffcc00;/* Set the subtitle color to pink */
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0 0 10px #fff; /* Glow effect for title */
+}
+
+
+/* Experience Description */
+.experience-description {
+    font-size: 1.2rem; /* Slightly increased font size for readability */
+    line-height: 1.6;
+    color: #ddd; /* Lighter gray text for descriptions */
+}
+
+/* Hover effect for subtitles */
+.experience-title:hover {
+    color: #ffcc33; /* Slightly lighter yellow when hovered */
+}

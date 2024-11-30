@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio</title>
+    <link rel="stylesheet" href="Reflection.css"> <!-- External CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My E-Portfolio</h1>
+        </div>
+        <nav>
+            <a href="ICT_Portfolio.html">Home</a>
+            <a href="About.html">About Me</a>
+            <a href="Experiences.html">School Experiences</a>
+            <a href="Outputs.html">Browser Outputs</a>
+            <a href="Reflection.html">Reflection</a>
+            <a href="https://www.facebook.com/corrales.franchescajay.1" target="_blank">Contact Me</a>
+            <a href="Credits.html">Credits</a>
+        </nav>
+    </header>
+    <main class="hero">
+        <div class="profile-header">
+            <div class="text-section">
+                <h1 class="welcome-title">
+                    <span class="hi">Reflection</span> <br> and Survey <span class="arrow">→</span>
+                </h1>
+            </div>
+
+            <!-- Reflection Paragraph -->
+            <div class="reflection-container">
+                <p class="reflection-paragraph">
+            The second quarter of the school year felt like exploring the vast ocean—endless and full of discoveries. Learning about CSS in ICT was like navigating its depths, uncovering how the different types—inline, internal, and external—control the flow and appearance of web pages. Formatting and designing layouts with CSS felt like creating intricate patterns on the ocean floor, using colors, spacing, and alignment to bring ideas to life. These lessons not only honed my technical skills but also challenged me to be precise and creative in my work.
+<br> <br>
+As I applied these skills to school projects, such as styling reports or designing web layouts, I realized how powerful CSS is in shaping digital spaces. Each accomplishment, no matter how small, felt like riding a wave of achievement. This experience taught me that learning, like the ocean, is vast and continuous. The perseverance and creativity I’ve developed will stay with me, guiding me through future challenges and opportunities.
+                </p>
+            </div>
+        </div>
+
+        <!-- Survey Section -->
+        <div class="survey-container">
+            <h2 class="survey-title">Survey Form</h2>
+            <form action="submit-survey.php" method="POST" class="survey-form">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="feedback">Feedback:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts..."></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

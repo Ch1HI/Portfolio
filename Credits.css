@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: 'Play Fair Display', serif;
+    color: #fff;
+    background-color: #282c34; /* Dark background */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8f9dc4; /* Highlight color */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('wave\ BG\ 1.png') no-repeat center center/cover; /* Replace with your background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+/* Add Glow to Text */
+.hero .center-text h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #fdfeff, 0 0 20px #228bee, 0 0 30px #5fb2ff;
+}
+
+.hero .center-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #94a8be, 0 0 10px #486ca1;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: changeBackground 6s infinite;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Background Animation */
+@keyframes changeBackground {
+    0% {
+        background-image: url('jellyfishyes.gif'); /* First image */
+    }
+    50% {
+        background-image: url('koifishyes.gif'); /* Second image */
+    }
+    100% {
+        background-image: url('jellyfishyes.gif'); /* Back to first image */
+    }
+}
+
+/* Acknowledgements title styling */
+.acknowledgements-title {
+    font-size: 3.5rem; /* Make the title a bit larger */
+    color: #ffcc00; /* Yellow color */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00; /* Glowing effect */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Subtitle styling */
+.subheading {
+    font-size: 2.5rem; /* Larger subtitles */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Black transparent background */
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Unordered list styling with bullets */
+.styled-list {
+    list-style-type: disc; /* Bullets added */
+    padding-left: 20px; /* Space from the left */
+    margin-top: 10px;
+}
+
+/* List item styling */
+.styled-list li {
+    font-size: 1.2rem;
+    padding: 8px 0;
+    text-align: left;
+}
+
+/* Underline everything after ":" */
+.styled-list li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px solid #ffcc00; /* Underline with yellow */
+    margin-top: 5px;
+}
+
+/* Optional: Hover effect for list items */
+.styled-list li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+

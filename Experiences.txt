@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Portfolio</title>
+    <link rel="stylesheet" href="chesca.css"> <!-- External CSS -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My E-Portfolio</h1>
+        </div>
+         <nav>
+            <a href="2ndQuarter.html">Home</a>
+            <a href="About.html">About Me</a>
+            <a href="Experiences.html">School Experiences</a>
+            <a href="Outputs.html">Browser Outputs</a>
+            <a href="Reflection.html">Reflection</a>
+            <a href="https://www.facebook.com/corrales.franchescajay.1">Contact Me</a>
+            <a href="Credits.html">Credits</a>
+        </nav>
+    </header>
+<main class="hero">
+
+ 
+<h1 class="main-title">*:･ﾟ✧*:･ﾟ✧Experiences✧･ﾟ: *✧･ﾟ:*</h1>
+
+        <!-- First Experience (Booklandia) -->
+        <div class="experience-container">
+            <div class="image-container">
+                <img src="Booklandia.jpg" alt="Booklandia Image" class="experience-image">
+            </div>
+            <div class="text-container">
+                <h2 class="experience-title">Booklandia</h2>
+                <p class="experience-description">
+                
+                   During the English Month Celebration, the 9-Fairness class participated in the exciting Booklandia event. Two of the class representatives, Anthony and Jewel, stood out as they dressed up as Zuko and Katara from Avatar: The Last Airbender. Their costumes added a creative touch to the celebration, showcasing their enthusiasm for both English and popular culture. The event was filled with energy and fun, as students and teachers alike enjoyed the vibrant activities and the impressive costumes.
+</p>
+            </div>
+</div>
+        <!-- Second Experience (Book Parade) -->
+<div class="experience-container">
+    <div class="image-container">
+        <img src="BookParade.jpg" alt="Book Parade Image" class="experience-image">
+    </div>
+    <div class="text-container">
+        <h2 class="experience-title">Book Parade</h2>
+        <p class="experience-description">
+            During the English Month celebration, one of the exciting events was the Book Parade, where students from all grade levels dressed up as their favorite characters. My best friend, Reeza, and I had a blast dressing up as Astoria and Daphne Greengrass from Harry Potter. We were both excited to bring the Slytherin house to life and it felt like we were truly part of the magical world. We also had fun playing with our wands.
+        </p>
+    </div>
+</div>
+
+        <!-- Third Experience (Reading Challenge) -->
+        <div class="experience-container">
+            <div class="image-container">
+                <img src="Intramurals.jpg" alt="Intramurals" class="experience-image">
+            </div>
+            <div class="text-container">
+                <h2 class="experience-title">Intramurals</h2>
+                <p class="experience-description">
+                    The opening of the Intramurals was a grand event, marked by the lighting of the torch by the respective team heads. It was a moment of unity and excitement, as each team gathered to kick off the competition. The four teams—Yellow Bakunawa, Blue Minokawa, Green Magindara, and Red Santelmos—showed their team spirit with pride. Each team’s name reflected a unique symbol from Filipino mythology, adding a special cultural touch to the event. The torch lighting ceremony signaled the start of the games, and everyone was eager to showcase their skills and sportsmanship throughout the intramurals.
+                </p>
+            </div>
+        </div>
+
+       <!-- Fourth Experience (Teacher's Day Video) -->
+<div class="experience-container reverse">
+    <div class="text-container">
+        <h2 class="experience-title">Teacher's Day</h2>
+        <p class="experience-description">
+            The 9-Fairness class celebrated Teachers' Day with a fun and lively event, where everyone wore blue to show their appreciation. The highlight of the celebration was a game of *Penoy Henyo*, specially prepared by the students for the teachers. In the video, Ms. Uminga eagerly answered the clues, while Ms. Mei did her best to guess the words. The game added a lot of excitement and laughter, making the Teachers' Day celebration even more memorable and special for everyone involved.
+        </p>
+    </div>
+    <div class="video-container">
+        <video controls>
+            <source src="TeachersDay.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!-- Fifth Experience (Skating Video) -->
+<div class="experience-container">
+    <div class="video-container">
+        <video controls>
+            <source src="Skating.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="text-container">
+        <h2 class="experience-title">Skating</h2>
+        <p class="experience-description">
+          After we practiced for our MAPEH PT, chacha, we went to SM Southmall to eat. We then discovered that there was a newly opened skating grounds, which we decided to try out. It was the first time I ever tried on rollerskates with a friend.  
+        </p>
+    </div>
+</div>
+
+<br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My E-Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
